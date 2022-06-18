@@ -3,7 +3,7 @@ body {
     width: 70%;
 }
 
-.header {
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -38,7 +38,7 @@ body {
 }
 
 
-.main {
+main {
     font-family: Arial, Helvetica, sans-serif;
     background-color: white;
     min-height: 100vh;
