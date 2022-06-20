@@ -130,7 +130,6 @@ ul.posts li {
 
 .footer__lista {
     display: flex;
-    /*    flex-direction: row-reverse;*/
     align-items: center;
     list-style: none;
 }
