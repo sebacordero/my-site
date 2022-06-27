@@ -1,56 +1,65 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-			
-			<!-- google analytics - i will not share this data with google -->
-			{% include analytics.html %}	
-			
-    			<!-- Vinculacion de la libreria de iconos Jam Icons v2 - Iconos Tipograficos -->
-   			 <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
-		</head>
-		
-		<body>
-			<header class="header">
-			<nav class="nav">
-	    		<ul class="nav__lista">
-	        		<li class="nav__item">
-                    <a class="nav__enlace" href="/">Home</a></li>
-		        	<li class="nav__item">
-                    <a class="nav__enlace"  href="/about">About</a></li>
-	        		<li class="nav__item">
-                    <a class="nav__enlace"  href="/cv">CV</a></li>
-	        		<li class="nav__item">
-                    <a class="nav__enlace"  href="/blog">Blog</a></li>
-	    		</ul>
-			</nav>
-			</header>
-			
-			
-			<main class="main">	
-				
-			<div class="container">
-			
-			{{ content }}
-			
-			</div><!-- /.container -->
-				
-				
-			</main>
+<html>
 
-			<a href="https://wa.me/34608583401" class="position-fixed" target="_blank">
-				<span class="jam jam-whatsapp"></span>
-			</a>
-			
-			<footer class="footer">
-	    		<ul class="footer__lista">
-                <li class="footer__item">
-                    <a class="footer__enlace"  href="mailto:seba.cordero@gmail.com">email</a></li>
-	        		 <li class="footer__item">
-                    <a class="footer__enlace"   href="https://github.com/sebacordero">github.com/sebacordero</a></li>
-				</ul>
-			</footer>
-		</body>
-	</html>
+<head>
+	<title>{{ page.title }}</title>
+	<!-- link to main stylesheet -->
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
+
+	<!-- google analytics - i will not share this data with google -->
+	{% include analytics.html %}
+
+	<!-- Vinculacion de la libreria de iconos Jam Icons v2 - Iconos Tipograficos -->
+	<link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+</head>
+
+<body>
+	<header class="header">
+		<h1>Seba Cordero</h1>
+		<nav class="nav">
+			<ul class="nav__lista">
+				<li class="nav__item">
+					<a class="nav__enlace" href="/">Home</a>
+				</li>
+				<li class="nav__item">
+					<a class="nav__enlace" href="/about">About</a>
+				</li>
+				<li class="nav__item">
+					<a class="nav__enlace" href="/cv">CV</a>
+				</li>
+				<li class="nav__item">
+					<a class="nav__enlace" href="/blog">Blog</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+
+	<main class="main">
+
+		<div class="container">
+
+			{{ content }}
+
+		</div><!-- /.container -->
+
+
+	</main>
+
+	<a href="https://wa.me/34608583401" class="position-fixed" target="_blank">
+		<span class="jam jam-whatsapp"></span>
+	</a>
+
+	<footer class="footer">
+		<ul class="footer__lista">
+			<li class="footer__item">
+				<a class="footer__enlace" href="mailto:seba.cordero@gmail.com">email</a>
+			</li>
+			<li class="footer__item">
+				<a class="footer__enlace" href="https://github.com/sebacordero">github.com/sebacordero</a>
+			</li>
+		</ul>
+	</footer>
+</body>
+
+</html>
